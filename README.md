@@ -2,6 +2,7 @@
 
 A lightweight, single-file PHP file manager designed for quick deployment and simple web-based file management.  
 Built to be portable and easy to use, `one-filemanager-php` can run on environments ranging from **PHP 5.4 up to the latest PHP versions**.
+Pass : admin1230
 
 ## Overview
 
