@@ -55,3 +55,11 @@ Example:
 
 ```bash
 https://yourdomain.com/one-filemanager-php.php
+
+## Disclaimer
+
+This project is provided for educational, administrative, and authorized testing purposes only.
+
+The author is not responsible for any misuse, abuse, damage, or legal consequences resulting from the use of this script, whether caused intentionally or unintentionally. By using this project, you agree that you are solely responsible for your actions and for ensuring that your use complies with all applicable laws, regulations, and permissions.
+
+Use this script only on systems and environments that you own or are explicitly authorized to manage or test.
