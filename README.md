@@ -55,6 +55,7 @@ Example:
 
 ```bash
 https://yourdomain.com/one-filemanager-php.php
+```
 
 ## Disclaimer
 
