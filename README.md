@@ -55,6 +55,7 @@ admin1230
 - Simple and lightweight interface
 - Broad compatibility across PHP versions
 - Portable and easy to move between servers
+- Etc
 
 ---
 
