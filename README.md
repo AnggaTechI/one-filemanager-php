@@ -53,4 +53,4 @@ This project supports:
 Example:
 
 ```bash
-https://github.com/AnggaTechI/one-filemanager-php
+https://yourdomain.com/one-filemanager-php.php
