@@ -35,7 +35,7 @@ It is especially useful for:
 Default password:
 
 ```text
-admin123
+admin1230
 ```
 
 > **Important:** Change the default password before using this project in any public or production environment.
